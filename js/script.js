@@ -36,7 +36,7 @@ const heroSection = document.querySelector('#hero');
 
 function checkHeaderScroll() {
     const heroHeight = heroSection.offsetHeight;
-    if (window.scrollY === 0 ) {
+    if (window.scrollY === 0) {
         header.classList.remove('sticky');
         header.classList.remove('sticky-return');
     } else {
@@ -57,20 +57,245 @@ const links = document.querySelectorAll('.navbar_item_link');
 const sections = document.querySelectorAll('section');
 
 function highlightLinkOnScroll() {
-  const scrollPosition = window.scrollY;
+    const scrollPosition = window.scrollY;
 
-  for (let i = 1; i < sections.length; i++) {
-    const section = sections[i]; 
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
+    for (let i = 1; i < sections.length; i++) {
+        const section = sections[i];
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
 
-    if (scrollPosition >= sectionTop - 100 && scrollPosition < sectionTop + sectionHeight - 100) {
-      links[i - 1].classList.add('active'); 
-    } else {
-      links[i - 1].classList.remove('active');
+        if (scrollPosition >= sectionTop - 100 && scrollPosition < sectionTop + sectionHeight - 100) {
+            links[i - 1].classList.add('active');
+        } else {
+            links[i - 1].classList.remove('active');
+        }
     }
-  }
 }
 
 window.addEventListener('scroll', highlightLinkOnScroll);
 highlightLinkOnScroll();
+
+const bluePulse1 = document.querySelector("#blue-pulse-1");
+
+function animateBluePulse1() {
+    const startX1 = 83, startY1 = 320, startX2 = 83, startY2 = 415;
+    const targetX1 = 400, targetY1 = 83, targetX2 = 350, targetY2 = 133.75;
+
+    const duration = 2200;
+    const delay = 500;
+    const repeatDelay = 1400;
+    let step = 0;
+    const steps = 110;
+
+    function updateGradient() {
+        if (step <= steps) {
+            const x1 = startX1 + (targetX1 - startX1) * (step / steps);
+            const y1 = startY1 + (targetY1 - startY1) * (step / steps);
+            const x2 = startX2 + (targetX2 - startX2) * (step / steps);
+            const y2 = startY2 + (targetY2 - startY2) * (step / steps);
+
+            bluePulse1.setAttribute("x1", x1);
+            bluePulse1.setAttribute("y1", y1);
+            bluePulse1.setAttribute("x2", x2);
+            bluePulse1.setAttribute("y2", y2);
+
+            step++;
+
+            requestAnimationFrame(updateGradient);
+        } else {
+            setTimeout(animateBluePulse1, repeatDelay);
+        }
+    }
+
+    setTimeout(updateGradient, delay);
+}
+
+animateBluePulse1();
+
+
+const bluePulse2 = document.querySelector("#blue-pulse-2");
+
+function animateBluePulse2() {
+    const startX1 = 83, startY1 = 267.5, startX2 = 83, startY2 = 415;
+    const targetX1 = 400, targetY1 = 83, targetX2 = 350, targetY2 = 133.75;
+
+    const duration = 2200;
+    const delay = 500;
+    const repeatDelay = 1400;
+    let step = 0;
+    const steps = 160;
+
+    function updateGradient() {
+        if (step <= steps) {
+            const x1 = startX1 + (targetX1 - startX1) * (step / steps);
+            const y1 = startY1 + (targetY1 - startY1) * (step / steps);
+            const x2 = startX2 + (targetX2 - startX2) * (step / steps);
+            const y2 = startY2 + (targetY2 - startY2) * (step / steps);
+
+            bluePulse2.setAttribute("x1", x1);
+            bluePulse2.setAttribute("y1", y1);
+            bluePulse2.setAttribute("x2", x2);
+            bluePulse2.setAttribute("y2", y2);
+
+            step++;
+
+            requestAnimationFrame(updateGradient);
+        } else {
+            setTimeout(animateBluePulse2, repeatDelay);
+        }
+    }
+
+    setTimeout(updateGradient, delay);
+}
+
+animateBluePulse2();
+
+
+const pinkPulse1 = document.querySelector("#pink-pulse-1");
+
+function animatePinkPulse1() {
+    const startX1 = 412, startY1 = 264, startX2 = 412, startY2 = 304;
+    const targetX1 = 400, targetY1 = 83, targetX2 = 350, targetY2 = 133.75;
+
+    const duration = 2200;
+    const delay = 500;
+    const repeatDelay = 1400;
+    let step = 0;
+    const steps = 50;
+
+    function updateGradient() {
+        if (step <= steps) {
+            const x1 = startX1 + (targetX1 - startX1) * (step / steps);
+            const y1 = startY1 + (targetY1 - startY1) * (step / steps);
+            const x2 = startX2 + (targetX2 - startX2) * (step / steps);
+            const y2 = startY2 + (targetY2 - startY2) * (step / steps);
+
+            pinkPulse1.setAttribute("x1", x1);
+            pinkPulse1.setAttribute("y1", y1);
+            pinkPulse1.setAttribute("x2", x2);
+            pinkPulse1.setAttribute("y2", y2);
+
+            step++;
+
+            requestAnimationFrame(updateGradient);
+        } else {
+            setTimeout(animatePinkPulse1, repeatDelay);
+        }
+    }
+
+    setTimeout(updateGradient, delay);
+}
+
+animatePinkPulse1();
+
+
+const pinkGradient2 = document.querySelector("#pink-pulse-2");
+
+function animatePinkPulse2() {
+    const startX1 = 490, startX2 = 490, startY1 = 266, startY2 = 284;
+    const targetX1 = 479, targetX2 = 479, targetY1 = 120, targetY2 = 150;
+
+    const duration = 2200;
+    const delay = 500;
+    const repeatDelay = 1800;
+    let step = 0;
+    const steps = 110;
+
+    function updateGradient() {
+        if (step <= steps) {
+            const x1 = startX1 + (targetX1 - startX1) * (step / steps);
+            const y1 = startY1 + (targetY1 - startY1) * (step / steps);
+            const x2 = startX2 + (targetX2 - startX2) * (step / steps);
+            const y2 = startY2 + (targetY2 - startY2) * (step / steps);
+
+            pinkGradient2.setAttribute("x1", x1);
+            pinkGradient2.setAttribute("y1", y1);
+            pinkGradient2.setAttribute("x2", x2);
+            pinkGradient2.setAttribute("y2", y2);
+
+            step++;
+
+            requestAnimationFrame(updateGradient);
+        } else {
+            setTimeout(animatePinkPulse2, repeatDelay);
+        }
+    }
+
+    setTimeout(updateGradient, delay);
+}
+
+animatePinkPulse2();
+
+const orangePulse1 = document.querySelector("#orange-pulse-1");
+
+function animateOrangePulse1() {
+    const startX1 = 826, startY1 = 270, startX2 = 826, startY2 = 340;
+    const targetX1 = 360, targetY1 = 130, targetX2 = 400, targetY2 = 170;
+
+    const duration = 2200;
+    const delay = 500;
+    const repeatDelay = 1800;
+    let step = 0;
+    const steps = 105;
+
+    function updateGradient() {
+        if (step <= steps) {
+            const x1 = startX1 + (targetX1 - startX1) * (step / steps);
+            const y1 = startY1 + (targetY1 - startY1) * (step / steps);
+            const x2 = startX2 + (targetX2 - startX2) * (step / steps);
+            const y2 = startY2 + (targetY2 - startY2) * (step / steps);
+
+            orangePulse1.setAttribute("x1", x1);
+            orangePulse1.setAttribute("y1", y1);
+            orangePulse1.setAttribute("x2", x2);
+            orangePulse1.setAttribute("y2", y2);
+
+            step++;
+
+            requestAnimationFrame(updateGradient);
+        } else {
+            setTimeout(animateOrangePulse1, repeatDelay);
+        }
+    }
+
+    setTimeout(updateGradient, delay);
+}
+
+animateOrangePulse1();
+
+const orangePulse2 = document.querySelector("#orange-pulse-2");
+
+function animateOrangePulse2() {
+    const startX1 = 868, startY1 = 280, startX2 = 868, startY2 = 440;
+    const targetX1 = 300, targetY1 = 140, targetX2 = 400, targetY2 = 180;
+
+    const duration = 2200;
+    const delay = 500;
+    const repeatDelay = 1800;
+    let step = 0;
+    const steps = 170;
+
+    function updateGradient() {
+        if (step <= steps) {
+            const x1 = startX1 + (targetX1 - startX1) * (step / steps);
+            const y1 = startY1 + (targetY1 - startY1) * (step / steps);
+            const x2 = startX2 + (targetX2 - startX2) * (step / steps);
+            const y2 = startY2 + (targetY2 - startY2) * (step / steps);
+
+            orangePulse2.setAttribute("x1", x1);
+            orangePulse2.setAttribute("y1", y1);
+            orangePulse2.setAttribute("x2", x2);
+            orangePulse2.setAttribute("y2", y2);
+
+            step++;
+
+            requestAnimationFrame(updateGradient);
+        } else {
+            setTimeout(animateOrangePulse2, repeatDelay);
+        }
+    }
+
+    setTimeout(updateGradient, delay);
+}
+
+animateOrangePulse2();
