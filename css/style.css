@@ -124,6 +124,12 @@ header.sticky {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
+  height: 4rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #2c3437;
+  background-color: var(--black-color);
   animation: slideDown 0.5s ease-out forwards;
 }
 
@@ -601,6 +607,68 @@ nav {
   z-index: -1;
 }
 
+/* .sondage {
+  width: 200%;
+  height: 16%;
+  margin-left: -100%;
+  position: relative;
+  animation: none;
+  display: inline-block;
+}
+
+.sondage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 0;
+  height: 1px;
+  border-top: 1px dashed var(--white-color);
+  animation: drawTop 15s linear infinite;
+}
+
+.sondage::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 0;
+  height: 1px;
+  border-bottom: 1px dashed var(--white-color);
+  animation: drawBottom 15s linear 1s infinite;
+}
+
+@keyframes drawTop {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 200%;
+  }
+  80% {
+    width: 200%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes drawBottom {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 200%;
+  }
+  80% {
+    width: 200%;
+  }
+  100% {
+    width: 0;
+  }
+} */
+
+
 .introduction {
   background-color: #2c3437;
   padding: .4rem 1rem;
@@ -667,6 +735,7 @@ nav {
   border-top-style: solid;
   border-color: #2c3437;
   z-index: 1000;
+  background: linear-gradient(to top right, var(--black-color) 25%, transparent 25%);
 }
 
 .career .title {
@@ -990,4 +1059,245 @@ nav {
   color: #888;
   margin: 0;
   max-width: 50ch;
+}
+
+.experience {
+  width: 100%;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-color: #2c3437;
+  position: relative;
+  overflow: hidden;
+  /* background: linear-gradient(to top, var(--black-color) 50%, transparent 50%); */
+}
+
+.experience .title {
+  opacity: 1;
+  position: relative;
+  width: auto;
+  height: 60px;
+  transition: all 0.4s ease;
+  z-index: -100;
+}
+
+.experience .title::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  inset: 0;
+  aspect-ratio: 1 / 1;
+  width: 170px;
+  margin-top: -8%;
+  margin-left: -4%;
+  border-radius: 9999px;
+  background-color: #2c682c;
+  filter: blur(120px);
+  content: "";
+  transition: all 0.4s ease;
+  z-index: -100;
+}
+
+.experience_logo {
+  width: 100%;
+}
+
+.i-container {
+  position: relative;
+  z-index: 11;
+  width: 40px;
+  height: 40px;
+}
+
+.i-container i {
+  color: var(--white-color);
+  display: block;
+  background: transparent;
+}
+
+.glowing-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: #196c2e;
+  filter: blur(10px);
+  z-index: -10;
+}
+
+.experience_container {
+  width: 100%;
+  height: auto;
+}
+
+.gradient-line {
+  background: linear-gradient(#56d364,
+      #196c2e 10%,
+      #2c682c 70%,
+      #2ea043 80%,
+      #56d364);
+  margin-left: calc((40px / 2) - (3px / 2));
+  margin-right: calc((40px / 2) - (3px / 2));
+  box-shadow: 0px 5px 8px #429642;
+  width: 3px;
+  height: 0px;
+  border-radius: 15px;
+}
+
+.experience_container_info {
+  width: calc(100% - 40px);
+}
+
+.experience_container_info h5 {
+  color: var(--white-color);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.experience_container_info h6 {
+  color: var(--white-color);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.experience_container_info p {
+  color: var(--white-color);
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.experience_container_info p strong {
+  color: #3CCF91;
+}
+
+.experience_cadre {
+  position: relative;
+  width: 110%;
+  margin-left: -10%;
+  height: 350px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 27 34 / var(--tw-bg-opacity));
+  border-radius: 1rem;
+  border-width: 0.5px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(48 54 61 / var(--tw-border-opacity));
+  box-shadow: 0px 0px 60px 50px var(--black-color);
+  transition: transform 0.2s ease;
+  overflow: hidden;
+}
+
+.experience_cadre_img {
+  border-radius: 0.7rem;
+  width: 40%;
+  overflow: hidden;
+}
+
+.back {
+  background: rgb(126, 231, 135);
+  border-radius: 100%;
+  mix-blend-mode: soft-light;
+  left: 0px;
+  will-change: transform;
+  opacity: 0.7;
+  filter: blur(180px);
+  border-style: none;
+  width: 500px;
+  height: 1000px;
+  z-index: -1;
+  bottom: 0px;
+  position: absolute;
+}
+
+.green_experience {
+  margin-top: -20px;
+}
+
+.logos-container {
+  height: 40px;
+}
+
+.logos-container img {
+  height: 100%;
+}
+
+.glowing-icon-gop {
+  background-color: #90c43cb0 !important;
+}
+
+.green_experience .experience_container_info p strong {
+  color: #90c43c;
+}
+
+.gradient-line-gop {
+  background: linear-gradient(#9fd34a,
+      #6c9729 10%,
+      #90c43c 70%,
+      #90c43cbe 80%,
+      #90c43c7b 90%,
+      #9fd34a);
+  margin-left: calc((40px / 2) - (3px / 2));
+  margin-right: calc((40px / 2) - (3px / 2));
+  box-shadow: 0px 5px 8px #90c43c;
+  width: 3px;
+  height: 0px;
+  border-radius: 15px;
+}
+
+.back-gop {
+  background-color: #9dff00 !important;
+}
+
+.glowing-icon-hammad {
+  background-color: #d41c0b78 !important;
+}
+
+.hammad_experience .experience_container_info p strong {
+  color: #df2211;
+}
+
+.back_hammad {
+  background-color: #d41c0be1 !important;
+}
+
+.gradient-line-hammad {
+  background: linear-gradient(#df1f0dc9,
+      #d41c0ba0 10%,
+      #911106 70%,
+      #d41c0b 80%,
+      #d43a0b);
+  margin-left: calc((40px / 2) - (3px / 2));
+  margin-right: calc((40px / 2) - (3px / 2));
+  box-shadow: 0px 5px 8px #d41c0b;
+  width: 3px;
+  height: 0px;
+  border-radius: 15px;
+}
+
+.glowing-icon-jorf {
+  background-color: rgba(255, 68, 0, 0.858) !important;
+}
+
+.jorf_experience .experience_container_info p strong {
+  color: orangered;
+}
+
+.back_jorf {
+  background-color: orange !important;
+}
+
+.gradient-line-jorf {
+  background: linear-gradient(orangered,
+      rgba(255, 68, 0, 0.523) 10%,
+      rgba(255, 68, 0, 0.79) 70%,
+      rgba(255, 68, 0, 0.829) 80%,
+      rgba(255, 166, 0, 0.694));
+  margin-left: calc((40px / 2) - (3px / 2));
+  margin-right: calc((40px / 2) - (3px / 2));
+  box-shadow: 0px 5px 8px orangered;
+  width: 3px;
+  height: 0px;
+  border-radius: 15px;
 }

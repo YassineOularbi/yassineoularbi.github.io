@@ -299,3 +299,80 @@ function animateOrangePulse2() {
 }
 
 animateOrangePulse2();
+
+window.addEventListener("scroll", function () {
+    const gradientLine = document.querySelector(".gradient-line");
+    const scrollPosition = window.scrollY;
+
+    const maxHeight = 700;
+    const offset = 1950; 
+
+    const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
+    gradientLine.style.height = newHeight + "px";
+});
+
+window.addEventListener("scroll", function () {
+    const gradientLine = document.querySelector(".gradient-line-gop");
+    const scrollPosition = window.scrollY;
+
+    const maxHeight = 740;
+    const offset = 2750; 
+
+    const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
+    gradientLine.style.height = newHeight + "px";
+});
+
+window.addEventListener("scroll", function () {
+    const gradientLine = document.querySelector(".gradient-line-hammad");
+    const scrollPosition = window.scrollY;
+
+    const maxHeight = 740;
+    const offset = 3600; 
+
+    const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
+    gradientLine.style.height = newHeight + "px";
+});
+
+window.addEventListener("scroll", function () {
+    const gradientLine = document.querySelector(".gradient-line-jorf");
+    const scrollPosition = window.scrollY;
+
+    const maxHeight = 600;
+    const offset = 4450; 
+
+    const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
+    gradientLine.style.height = newHeight + "px";
+});
+
+
+const experienceCadres = document.querySelectorAll('.experience_cadre');
+
+experienceCadres.forEach((experienceCadre) => {
+    const backDiv = experienceCadre.querySelector('.back');
+
+    experienceCadre.addEventListener('mousemove', (e) => {
+        const { clientX: mouseX, clientY: mouseY } = e;
+        const { left, top, width, height } = experienceCadre.getBoundingClientRect();
+
+        const centerX = left + width / 1.1; 
+        const centerY = top + height / 1.1;
+        const deltaX = (mouseX - centerX) / width * 2;  
+        const deltaY = (mouseY - centerY) / height * 2;
+
+        experienceCadre.style.transform = 
+            `perspective(1400px) rotateX(${deltaY}deg) rotateY(${deltaX}deg)`;
+
+        if (backDiv) {
+            const x = mouseX - left;
+            const y = mouseY - top;
+            backDiv.style.transform = `translate(${x - 50}px, ${y - 50}px)`;
+        }
+    });
+
+    experienceCadre.addEventListener('mouseleave', () => {
+        experienceCadre.style.transform = '';
+        if (backDiv) {
+            backDiv.style.transform = 'translate(-150%, -150%)';
+        }
+    });
+});
