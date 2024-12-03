@@ -305,7 +305,7 @@ window.addEventListener("scroll", function () {
     const scrollPosition = window.scrollY;
 
     const maxHeight = 700;
-    const offset = 1950; 
+    const offset = 1950;
 
     const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
     gradientLine.style.height = newHeight + "px";
@@ -316,7 +316,7 @@ window.addEventListener("scroll", function () {
     const scrollPosition = window.scrollY;
 
     const maxHeight = 740;
-    const offset = 2750; 
+    const offset = 2750;
 
     const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
     gradientLine.style.height = newHeight + "px";
@@ -327,7 +327,7 @@ window.addEventListener("scroll", function () {
     const scrollPosition = window.scrollY;
 
     const maxHeight = 740;
-    const offset = 3600; 
+    const offset = 3600;
 
     const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
     gradientLine.style.height = newHeight + "px";
@@ -338,7 +338,7 @@ window.addEventListener("scroll", function () {
     const scrollPosition = window.scrollY;
 
     const maxHeight = 600;
-    const offset = 4450; 
+    const offset = 4450;
 
     const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
     gradientLine.style.height = newHeight + "px";
@@ -354,12 +354,12 @@ experienceCadres.forEach((experienceCadre) => {
         const { clientX: mouseX, clientY: mouseY } = e;
         const { left, top, width, height } = experienceCadre.getBoundingClientRect();
 
-        const centerX = left + width / 1.1; 
+        const centerX = left + width / 1.1;
         const centerY = top + height / 1.1;
-        const deltaX = (mouseX - centerX) / width * 2;  
+        const deltaX = (mouseX - centerX) / width * 2;
         const deltaY = (mouseY - centerY) / height * 2;
 
-        experienceCadre.style.transform = 
+        experienceCadre.style.transform =
             `perspective(1400px) rotateX(${deltaY}deg) rotateY(${deltaX}deg)`;
 
         if (backDiv) {
@@ -376,3 +376,22 @@ experienceCadres.forEach((experienceCadre) => {
         }
     });
 });
+
+
+function toggleSkills(button) {
+    const buttons = document.querySelectorAll('.skills_category button');
+    buttons.forEach((btn) => btn.classList.remove('active'));
+
+    button.classList.add('active');
+
+    const category = button.getAttribute('data-category');
+
+    const skills = document.querySelectorAll('.skill');
+    skills.forEach((skill) => {
+        if (skill.classList.contains(`not-${category}`)) {
+            skill.style.opacity = '0.3';
+        } else {
+            skill.style.opacity = '1';
+        }
+    });
+}
