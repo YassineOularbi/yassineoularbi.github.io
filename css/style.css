@@ -1611,7 +1611,6 @@ button.active {
 
 .soft_skills {
   width: 100%;
-  margin-bottom: 150px;
   gap: 30px;
   overflow: hidden;
 }
@@ -1645,7 +1644,7 @@ button.active {
   display: flex;
   width: calc(250px * 24);
   perspective: 400px;
-  animation: scrollSkills 20s linear infinite ;
+  animation: scrollSkills 20s linear infinite;
 }
 
 .soft-skills-content:hover {
@@ -1656,6 +1655,7 @@ button.active {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-250px * 8));
   }
@@ -1693,4 +1693,124 @@ button.active {
   100% {
     transform: translateX(-50%);
   }
+}
+
+.projects {
+  width: 100%;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-color: #2c3437;
+  position: relative;
+  overflow: hidden;
+  /* background: linear-gradient(to top, var(--black-color) 50%, transparent 50%); */
+}
+
+.projects .title {
+  opacity: 1;
+  position: relative;
+  width: auto;
+  height: 60px;
+  transition: all 0.4s ease;
+  z-index: -100;
+}
+
+.projects .title::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  inset: 0;
+  aspect-ratio: 1 / 1;
+  width: 170px;
+  margin-top: -8%;
+  margin-left: -4%;
+  border-radius: 9999px;
+  background-color: #2c682c;
+  filter: blur(120px);
+  content: "";
+  transition: all 0.4s ease;
+  z-index: -100;
+}
+
+.explore-link {
+  color: #2FC291;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.explore-link:hover {
+  color: var(--white-color);
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+  background-color: var(--black-color);
+  border: 1px solid #2c3437;
+  width: 90%;
+}
+
+.project-card img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.project-card .card-title {
+  border-bottom: 1px solid #2c3437 !important;
+}
+
+.project-card h5 {
+  color: var(--white-color);
+  letter-spacing: 1px;
+}
+
+.project-card .card-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.project-card .badge {
+  height: 25px;
+}
+
+.project-card .badge i {
+  margin-left: -5px;
+  font-size: 15px;
+}
+
+.badge-green {
+  color: #9AE6B4;
+  background-color: #202C24;
+}
+
+.badge-green i {
+  color: #9AE6B4;
+}
+
+.badge-red {
+  color: rgb(252, 53, 53);
+  background-color: rgba(128, 31, 31, 0.3);
+}
+
+.badge-red i {
+  color: rgb(252, 53, 53);
+}
+
+.badge-rose {
+  color: #E3A5BA;
+  background-color: #2F2428;
+}
+
+.badge-rose i {
+  color: #E3A5BA;
+}
+
+.badge-blue {
+  color: #90CDF4;
+  background-color: #1E282E;
+}
+
+.badge-blue i {
+  color: #90CDF4;
 }
