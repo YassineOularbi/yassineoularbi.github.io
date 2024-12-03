@@ -1508,3 +1508,103 @@ nav {
 button.active {
   background-color: #2c3437;
 }
+
+.agriculture_skills p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.agriculture_skills .right p {
+  text-align: start;
+}
+
+.agriculture_skills .left p {
+  text-align: end;
+}
+
+.left p:nth-child(1) {
+  margin-right: -200px;
+}
+
+.left p:nth-child(2) {
+  margin-right: -100px;
+}
+
+.left p:nth-child(3) {
+  margin-right: -60px;
+}
+
+.left p:nth-child(4) {
+  margin-right: -20px;
+}
+
+.left p:nth-child(5) {
+  margin-right: -10px;
+}
+
+.left p:nth-child(6) {
+  margin-right: -5px;
+}
+
+.left p:nth-child(7) {
+  margin-right: -20px;
+}
+
+.left p:nth-child(8) {
+  margin-right: -30px;
+}
+
+.left p:nth-child(9) {
+  margin-right: -40px;
+}
+
+.left p:nth-child(10) {
+  margin-right: -50px;
+}
+
+.right p:nth-child(1) {
+  margin-left: -200px;
+}
+
+.right p:nth-child(2) {
+  margin-left: -100px;
+}
+
+.right p:nth-child(3) {
+  margin-left: -60px;
+}
+
+.right p:nth-child(4) {
+  margin-left: -20px;
+}
+
+.right p:nth-child(5) {
+  margin-left: -10px;
+}
+
+.right p:nth-child(6) {
+  margin-left: -5px;
+}
+
+.right p:nth-child(7) {
+  margin-left: -20px;
+}
+
+.right p:nth-child(8) {
+  margin-left: -30px;
+}
+
+.right p:nth-child(9) {
+  margin-left: -40px;
+}
+
+.right p:nth-child(10) {
+  margin-left: -50px;
+}
+
+.agriculture_skills h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2ea043;
+  letter-spacing: 1px;
+}
