@@ -1814,3 +1814,53 @@ button.active {
 .badge-blue i {
   color: #90CDF4;
 }
+
+.badge-orange {
+  color: orangered;
+  background-color: rgba(255, 68, 0, 0.24);
+}
+
+.badge-orange i {
+  color: orangered;
+}
+
+.badge-yellow i {
+  color: #FBD38D;
+}
+
+.badge-yellow {
+  color: #FBD38D;
+  background-color: #2F291E;
+}
+
+.project-2 {
+  margin-top: -350px;
+}
+
+.project-3 {
+  margin-top: 50px;
+}
+
+.project-4 {
+  margin-top: -300px;
+}
+
+.project-5 {
+  margin-top: 50px;
+}
+
+.project-5 img {
+  height: 400px;
+}
+
+.project-6 {
+  margin-top: -340px;
+}
+
+.project-7 {
+  margin-top: 50px;
+}
+
+.project-7 img {
+  height: 220px;
+}
