@@ -1751,7 +1751,6 @@ button.active {
 
 .project-card img {
   object-fit: cover;
-  height: 300px;
   width: 100%;
 }
 
@@ -1848,20 +1847,12 @@ button.active {
   margin-top: 50px;
 }
 
-.project-5 img {
-  height: 400px;
-}
-
 .project-6 {
   margin-top: -340px;
 }
 
 .project-7 {
   margin-top: 50px;
-}
-
-.project-7 img {
-  height: 220px;
 }
 
 .services {
@@ -2213,4 +2204,11 @@ footer p {
     margin-top: -9px;
   }
 
+  .features_card__xYla9 {
+    height: 400px;
+  }
+
+  .contact_desc {
+    width: 75% !important;
+  }
 }
