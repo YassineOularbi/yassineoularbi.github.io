@@ -2200,6 +2200,13 @@ footer p {
     height: 130px;
   }
 
+  .hex-hover-border {
+    top: 20px;
+    left: -78px;
+    width: 188%;
+    height: 63%;
+  }
+
   .hex-line {
     height: 159px;
   }
@@ -2486,5 +2493,64 @@ footer p {
 
   .contact_desc {
     width: 80% !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .powered_by {
+    display: none !important;
+  }
+
+  .career_school {
+    flex-direction: column;
+    gap: 2rem !important;
+    margin-top: 2rem;
+  }
+
+  .foundation_card {
+    width: 100% !important;
+  }
+
+  .experience_cadre {
+    width: 125%;
+    margin-left: -20%;
+  }
+
+  .skill {
+    width: 120px;
+    height: 110px;
+  }
+
+  .hex-line {
+    height: 136px;
+  }
+
+  .hex-tile {
+    width: 120px;
+    height: 100px;
+  }
+
+  .hex-tile::after {
+    height: 90px;
+    width: 110px;
+    top: 5px;
+    left: 5px;
+  }
+
+  .hex-line {
+    height: 135px;
+  }
+
+  .skills-container-1000 {
+    margin-bottom: 5px !important;
+  }
+
+  .skills .middle {
+    width: 70%;
+  }
+
+  .skills .middle dotlottie-player {
+    width: 420px !important;
+    height: 420px !important;
   }
 }
