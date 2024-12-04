@@ -2152,7 +2152,7 @@ footer p {
   font-weight: bold;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .search-box {
     width: 160px;
   }
@@ -2210,5 +2210,55 @@ footer p {
 
   .contact_desc {
     width: 75% !important;
+  }
+
+  .hero-lottie {
+    width: 450px !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .search-box {
+    width: 40px;
+    justify-content: center !important;
+  }
+
+  .search-box i {
+    width: 100%;
+  }
+
+  .search-box .search-input {
+    display: none;
+  }
+
+  .search-box .coding-symbole {
+    display: none !important;
+  }
+
+  .hero-lottie {
+    width: 400px !important;
+  }
+
+  .skills-container {
+    margin-top: -12px;
+  }
+
+  .skill {
+    width: 130px;
+    height: 125px;
+  }
+
+  .hex-tile {
+    width: 130px;
+    height: 105px;
+  }
+
+  .hex-line {
+    height: 147px;
+  }
+
+  .hex-tile::after {
+    height: 85px;
+    width: 110px;
   }
 }
