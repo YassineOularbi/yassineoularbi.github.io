@@ -293,7 +293,7 @@ nav {
   padding: 1rem 0;
   z-index: 1000;
   padding-bottom: 50px;
-  background: linear-gradient(to top right, var(--black-color) 25%, transparent 25%);
+  overflow: hidden;
 }
 
 
