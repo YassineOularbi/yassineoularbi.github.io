@@ -2144,6 +2144,10 @@ button.active {
   color: #2FC291;
 }
 
+.contact i {
+  color: #2FC291;
+}
+
 footer {
   width: 100%;
   border-top-width: 1px;
@@ -2155,4 +2159,58 @@ footer {
 
 footer p {
   font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .search-box {
+    width: 160px;
+  }
+
+  .search-box .coding-symbole {
+    width: 15%;
+  }
+
+  .about_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about_container_cadre {
+    width: 75%;
+    justify-content: center;
+    align-items: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 50px;
+  }
+
+  .about_container_info {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .skill {
+    width: 140px;
+    height: 130px;
+  }
+
+  .hex-line {
+    height: 159px;
+  }
+
+  .hex-tile::after {
+    width: 120px;
+  }
+
+  .skill-cadre {
+    margin-bottom: -15px;
+  }
+
+  .skills-container {
+    margin-top: -9px;
+  }
+
 }
