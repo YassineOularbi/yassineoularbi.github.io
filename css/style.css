@@ -542,7 +542,7 @@ nav {
   border-top-width: 1px;
   border-top-style: solid;
   border-color: #2c3437;
-  background: linear-gradient(to top, var(--black-color) 50%, transparent 50%);
+  overflow: hidden;
 }
 
 .about .title {
@@ -735,7 +735,7 @@ nav {
   border-top-style: solid;
   border-color: #2c3437;
   z-index: 1000;
-  background: linear-gradient(to top right, var(--black-color) 25%, transparent 25%);
+  overflow: hidden;
 }
 
 .career .title {
@@ -1068,7 +1068,6 @@ nav {
   border-color: #2c3437;
   position: relative;
   overflow: hidden;
-  /* background: linear-gradient(to top, var(--black-color) 50%, transparent 50%); */
 }
 
 .experience .title {
