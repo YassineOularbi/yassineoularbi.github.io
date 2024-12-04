@@ -157,6 +157,14 @@ header.sticky-return {
   }
 }
 
+.menu-burger {
+  display: none !important;
+}
+
+.menu-items {
+  display: none !important;
+}
+
 nav {
   width: 95%;
   height: 95%;
@@ -1343,6 +1351,10 @@ nav {
   transition: all 0.2s ease;
 }
 
+.skills-container-1000 {
+  display: none !important;
+}
+
 .skill {
   position: relative;
   width: 150px;
@@ -2260,5 +2272,219 @@ footer p {
   .hex-tile::after {
     height: 85px;
     width: 110px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    justify-content: space-between !important;
+    flex-wrap: nowrap;
+  }
+
+  .navbar_items {
+    display: none !important;
+  }
+
+  .navbar_main {
+    width: 20%;
+  }
+
+  .navbar_actions {
+    width: 100%;
+  }
+
+  .navbar_logo {
+    width: 20%;
+  }
+
+  .menu-burger {
+    position: relative;
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+  }
+
+  .menu-burger button {
+    background: transparent;
+    border: none;
+    padding: .4rem;
+    border-radius: .25rem;
+    transition: all 0.4s ease;
+  }
+
+  .menu-burger button:hover {
+    background-color: #2c3437;
+  }
+
+  .menu-burger button.active {
+    background-color: #2c3437;
+  }
+
+  .menu-items {
+    position: absolute;
+    flex-direction: column;
+    gap: 7px;
+    width: 100%;
+    height: 300px;
+    top: 50px;
+    z-index: -1;
+    left: -20px;
+    background: var(--black-color);
+    border-radius: .25rem;
+  }
+
+  .menu-items.show {
+    display: flex !important;
+  }
+
+  .hero_image {
+    display: none;
+  }
+
+  .scroll-downs {
+    display: none;
+  }
+
+  .about-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .berney {
+    text-align: center;
+    width: 100%;
+  }
+
+  .berney_tag {
+    width: 100%;
+  }
+
+  .career_container {
+    margin: 0 !important;
+    max-width: 95% !important;
+  }
+
+  .career_school {
+    gap: 1rem !important;
+  }
+
+  .foundation_card [data-title] {
+    font-size: 15px;
+  }
+
+  .foundation_card [data-subtitle] {
+    font-size: 13px;
+  }
+
+  .powered_by {
+    width: 100% !important;
+  }
+
+  .career .title::after {
+    margin-top: -40%;
+    margin-left: 32%;
+  }
+
+  .experience_cadre {
+    width: 135%;
+    margin-left: -25%;
+    margin-bottom: 20px;
+  }
+
+  .experience_cadre p {
+    font-size: 14px;
+  }
+
+  .skill-cadre {
+    display: none !important;
+  }
+
+  .skills-container {
+    display: none !important;
+  }
+
+  .skills_category {
+    width: 60%;
+  }
+
+  .skills-container-1000 {
+    display: flex !important;
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+
+  .skills-container-1000.next {
+    margin-top: -12px;
+  }
+
+  .skills .middle {
+    width: 70%;
+  }
+
+  .skills .right {
+    width: 25%;
+  }
+
+  .skills .left {
+    width: 25%;
+  }
+
+  .skills p {
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .skills .middle dotlottie-player {
+    width: 500px !important;
+    height: 500px !important;
+  }
+
+  .skills .middle h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .projects-container {
+    margin: 20px !important;
+    max-width: 100% !important;
+  }
+
+  .card-project {
+    width: 50% !important;
+    padding: 0 !important;
+  }
+
+  .projects-container .row {
+    width: 100% !important;
+  }
+
+  .projects-container .badge {
+    font-size: 11px;
+  }
+
+  .services-cont {
+    margin: 10px !important;
+    max-width: calc(100% - 10px*2) !important;
+  }
+
+  .features_card__xYla9[data-variant=callout] {
+    min-height: 430px;
+  }
+
+  .features_card__xYla9 [data-title] {
+    font-size: 15px;
+  }
+
+  .features_card__xYla9 img {
+    width: 120%;
+  }
+
+  .contact_desc {
+    width: 80% !important;
   }
 }

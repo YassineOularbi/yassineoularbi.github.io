@@ -410,3 +410,20 @@ document.querySelectorAll('.navbar_item_link').forEach(link => {
         }
     });
 });
+
+function toggleMenu(button) {
+    const menu = document.querySelector('.menu-items');
+    const icon = button.querySelector('i');
+
+    if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+        icon.classList.remove('fa-xmark');
+        button.classList.remove('active');
+        icon.classList.add('fa-bars');
+    } else {
+        menu.classList.add('show');
+        icon.classList.remove('fa-bars');
+        button.classList.add('active');
+        icon.classList.add('fa-xmark');
+    }
+}
