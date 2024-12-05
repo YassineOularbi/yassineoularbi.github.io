@@ -1359,6 +1359,10 @@ nav {
   display: none !important;
 }
 
+.skills-container-600 {
+  display: none !important;
+}
+
 .skill {
   position: relative;
   width: 150px;
@@ -2791,5 +2795,39 @@ footer p {
 
   .contact_desc {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .experience_container,
+  .experience_logo {
+    gap: 2rem !important;
+  }
+
+  .skills-container-800 {
+    display: none !important;
+  }
+
+  .skills-container-600 {
+    display: flex !important;
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+
+  .skills-container-600.next {
+    margin-top: -6px;
+  }
+
+  .skills p {
+    font-size: 10px;
+  }
+
+  .skills .middle dotlottie-player {
+    width: 350px !important;
+  }
+
+  .menu-items {
+    width: 140%;
   }
 }
