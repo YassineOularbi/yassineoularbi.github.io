@@ -165,6 +165,10 @@ header.sticky-return {
   display: none !important;
 }
 
+.search-box-burger {
+  display: none !important;
+}
+
 nav {
   width: 95%;
   height: 95%;
@@ -1360,6 +1364,10 @@ nav {
 }
 
 .skills-container-600 {
+  display: none !important;
+}
+
+.skills-container-400 {
   display: none !important;
 }
 
@@ -2829,5 +2837,141 @@ footer p {
 
   .menu-items {
     width: 140%;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    display: none !important;
+  }
+
+  .menu-items {
+    width: 180%;
+    height: 350px;
+  }
+
+  .search-box-burger {
+    display: flex !important;
+    height: 36.79px;
+    width: 150px;
+    background-color: #2c3437;
+    border-radius: .25rem;
+    transition: all 0.4s ease;
+  }
+
+  .search-box-burger i {
+    height: 100%;
+    width: 10%;
+    color: #929fa5;
+    transition: all 0.4s ease;
+  }
+
+  .search-box-burger .search-input {
+    color: var(--white-color);
+    background: none;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 80%;
+    padding: 0 .5rem;
+    transition: all 0.4s ease;
+  }
+
+  .search-box-burger .search-input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #929fa5;
+    transition: all 0.4s ease;
+  }
+
+  .search-box-burger .coding-symbole {
+    height: 100%;
+    width: 15%;
+    border-radius: .2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #929fa5;
+    color: #929fa5;
+    transition: all 0.4s ease;
+  }
+
+  .search-box-burger:hover {
+    background-color: #2c3437b9;
+  }
+
+  .search-box-burger:hover i {
+    color: var(--white-color);
+  }
+
+  .search-box-burger:hover .search-input::placeholder {
+    color: var(--white-color);
+  }
+
+  .search-box-burger:hover .coding-symbole {
+    color: var(--white-color);
+    border-color: var(--white-color);
+  }
+
+  .experience_cadre {
+    width: 120%;
+    margin-left: -20%;
+    padding: 0 !important;
+  }
+
+  .logos-container img {
+    height: 75% !important;
+  }
+
+  .features_card__xYla9[data-variant=callout] {
+    min-width: 450px;
+  }
+
+  .features_card__xYla9 img {
+    height: 100%;
+    width: 93.5%;
+  }
+
+  .experience_cadre_info {
+    padding: 0 10px;
+  }
+
+  .skills-container-600 {
+    display: none !important;
+  }
+
+  .skills-container-400 {
+    display: flex !important;
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+
+  .skills-container-400.next {
+    margin-top: -6px;
+  }
+
+  .skills .middle dotlottie-player {
+    margin-top: -100px !important;
+  }
+
+  .right, .left {
+    margin-top: 270px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .right {
+    margin-left: -60px !important;
+  }
+
+  .left {
+    margin-right: -60px !important;
+  }
+
+  .right p,
+  .left p {
+    margin: 0 !important;
+  }
+
+  .search-box-burger {
+    width: 95% !important;
   }
 }
