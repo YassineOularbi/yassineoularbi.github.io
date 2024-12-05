@@ -2553,4 +2553,26 @@ footer p {
     width: 420px !important;
     height: 420px !important;
   }
+
+  .projects-container .badge {
+    font-size: 10px;
+  }
+
+  .service-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services .subtitle {
+    font-size: 14px;
+  }
+
+  .features_card__xYla9[data-variant=callout] {
+    min-width: 500px;
+  }
+
+  .features_card__xYla9 img {
+    height: 100%;
+    width: 82.5%;
+  }
 }
