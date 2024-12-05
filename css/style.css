@@ -2606,7 +2606,7 @@ footer p {
     width: 100%;
   }
 
-  .heri-info {
+  .hero-info {
     width: 100%;
   }
 
@@ -2953,7 +2953,8 @@ footer p {
     margin-top: -100px !important;
   }
 
-  .right, .left {
+  .right,
+  .left {
     margin-top: 270px !important;
     margin-bottom: 20px !important;
   }
@@ -2973,5 +2974,91 @@ footer p {
 
   .search-box-burger {
     width: 95% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-container {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .hero-container .row {
+    width: 100% !important;
+  }
+
+  .hero-info {
+    padding: 5px !important;
+    width: calc(100% - 10px) !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-info p {
+    width: calc(100% - 10px) !important;
+  }
+
+  .custom-btn {
+    width: 24rem;
+    margin-left: 5px !important;
+  }
+
+  .about-text {
+    width: 100% !important;
+  }
+
+  .social-container {
+    width: 24rem;
+  }
+
+  .about_container_cadre {
+    width: 100%;
+  }
+
+  .introduction {
+    font-size: 12px;
+  }
+
+  .logos-container .enaa_img {
+    height: 50% !important;
+  }
+
+  .experience_container,
+  .experience_logo {
+    gap: 1rem !important;
+  }
+
+  .experience_container_info h5 {
+    font-size: 16px;
+  }
+
+  .experience_container_info h6 {
+    font-size: 14px;
+  }
+
+  .experience_container_info p {
+    font-size: 12px;
+  }
+
+  .skills_category {
+    width: 90%;
+  }
+
+  .projects-container .badge {
+    font-size: 9px;
+  }
+
+  .features_card__xYla9[data-variant=callout] {
+    min-width: 370px;
+  }
+
+  .features_card__xYla9 img {
+    height: 75%;
+    width: 90%;
+  }
+
+  .menu-items {
+    width: 210%;
   }
 }
