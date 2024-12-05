@@ -1355,6 +1355,10 @@ nav {
   display: none !important;
 }
 
+.skills-container-800 {
+  display: none !important;
+}
+
 .skill {
   position: relative;
   width: 150px;
@@ -2574,5 +2578,218 @@ footer p {
   .features_card__xYla9 img {
     height: 100%;
     width: 82.5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-container {
+    max-width: calc(100% - 20px);
+    margin: 10px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-container .row {
+    width: 100%;
+  }
+
+  .heri-info {
+    width: 100%;
+  }
+
+  .about-container {
+    max-width: calc(100% - 20px);
+    margin: 10px !important;
+  }
+
+  .career .title::after {
+    margin-top: -60%;
+    margin-left: 25%;
+  }
+
+  .experience-container {
+    max-width: calc(100% - 20px);
+    margin: 10px !important;
+  }
+
+  .experience_cadre {
+    flex-direction: column-reverse;
+    height: 500px;
+    width: 115%;
+    margin-left: -15%;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 30px;
+  }
+
+  .experience_cadre_info {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .experience_cadre_img {
+    width: 100%;
+  }
+
+  .skills_category {
+    width: 80%;
+  }
+
+  .skills-container-1000 {
+    display: none !important;
+  }
+
+  .skills-container-800 {
+    display: flex !important;
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+
+  .skills-container-800.next {
+    margin-top: -6px;
+  }
+
+  .subtitle {
+    font-size: 13px !important;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 16px !important;
+  }
+
+  .skills .title::after {
+    margin-top: -55%;
+    margin-left: 20%;
+  }
+
+  .hex-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hex-title {
+    font-size: 10px;
+  }
+
+  .subtitle h3 {
+    font-size: 16px !important;
+  }
+
+  .middle h4 {
+    font-size: 11px !important;
+  }
+
+  .skills .middle {
+    width: 50%;
+  }
+
+  .skills .middle dotlottie-player {
+    width: 400px !important;
+    height: 450px !important;
+  }
+
+
+  .left p:nth-child(1) {
+    margin-right: -130px;
+  }
+
+  .left p:nth-child(2) {
+    margin-right: -100px;
+  }
+
+  .left p:nth-child(3) {
+    margin-right: -60px;
+  }
+
+  .left p:nth-child(4) {
+    margin-right: -20px;
+  }
+
+  .left p:nth-child(5) {
+    margin-right: 5px;
+  }
+
+  .left p:nth-child(6) {
+    margin-right: 6px;
+  }
+
+  .left p:nth-child(7) {
+    margin-right: 7px;
+  }
+
+  .left p:nth-child(8) {
+    margin-right: -110px;
+  }
+
+  .left p:nth-child(9) {
+    margin-right: -110px;
+  }
+
+  .left p:nth-child(10) {
+    margin-right: -110px;
+  }
+
+  .right p:nth-child(1) {
+    margin-left: -130px;
+  }
+
+  .right p:nth-child(2) {
+    margin-left: -100px;
+  }
+
+  .right p:nth-child(3) {
+    margin-left: -60px;
+  }
+
+  .right p:nth-child(4) {
+    margin-left: -20px;
+  }
+
+  .right p:nth-child(5) {
+    margin-left: 5px;
+  }
+
+  .right p:nth-child(6) {
+    margin-left: 6px;
+  }
+
+  .right p:nth-child(7) {
+    margin-left: 7px;
+  }
+
+  .right p:nth-child(8) {
+    margin-left: -110px;
+  }
+
+  .right p:nth-child(9) {
+    margin-left: -110px;
+  }
+
+  .right p:nth-child(10) {
+    margin-left: -110px;
+  }
+
+  .project-section .row {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 50px;
+  }
+
+  .card-project {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .contact .container {
+    margin: 10px !important;
+    max-width: calc(100% - 20px);
+  }
+
+  .contact_desc {
+    width: 100% !important;
   }
 }
