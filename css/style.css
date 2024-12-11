@@ -306,6 +306,7 @@ nav {
   z-index: 1000;
   padding-bottom: 50px;
   overflow: hidden;
+  height: 700px;
 }
 
 
@@ -1189,7 +1190,7 @@ nav {
   margin-left: -10%;
   height: 350px;
   --tw-bg-opacity: 1;
-  background-color: rgb(22 27 34 / var(--tw-bg-opacity));
+  background-color: #1e2427;
   border-radius: 1rem;
   border-width: 0.5px;
   border-style: solid;
