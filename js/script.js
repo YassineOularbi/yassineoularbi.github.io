@@ -53,23 +53,25 @@ function checkHeaderScroll() {
 window.addEventListener('scroll', checkHeaderScroll);
 checkHeaderScroll();
 
-const links = document.querySelectorAll('.navbar_item_link');
+const links = document.querySelectorAll('.navbar_item_link'); 
 const sections = document.querySelectorAll('section');
 
 function highlightLinkOnScroll() {
     const scrollPosition = window.scrollY;
 
-    for (let i = 1; i < sections.length; i++) {
-        const section = sections[i];
+    sections.forEach((section, index) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
 
         if (scrollPosition >= sectionTop - 100 && scrollPosition < sectionTop + sectionHeight - 100) {
-            links[i - 1].classList.add('active');
-        } else {
-            links[i - 1].classList.remove('active');
+            links.forEach(link => link.classList.remove('active'));
+            links.forEach(link => {
+                if (link.getAttribute('href') === `#${section.id}`) {
+                    link.classList.add('active'); 
+                }
+            });
         }
-    }
+    });
 }
 
 window.addEventListener('scroll', highlightLinkOnScroll);
