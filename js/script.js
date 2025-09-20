@@ -303,7 +303,7 @@ function animateOrangePulse2() {
 animateOrangePulse2();
 
 window.addEventListener("scroll", function () {
-    const gradientLine = document.querySelector(".gradient-line");
+    const gradientLine = document.querySelector(".gradient-line-agri");
     const scrollPosition = window.scrollY;
 
     const maxHeight = 700;
@@ -314,11 +314,23 @@ window.addEventListener("scroll", function () {
 });
 
 window.addEventListener("scroll", function () {
+    const gradientLine = document.querySelector(".gradient-line-enaa");
+    const scrollPosition = window.scrollY;
+
+    const maxHeight = 700;
+    const offset = 2750;
+
+    const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
+    gradientLine.style.height = newHeight + "px";
+});
+
+
+window.addEventListener("scroll", function () {
     const gradientLine = document.querySelector(".gradient-line-gop");
     const scrollPosition = window.scrollY;
 
     const maxHeight = 740;
-    const offset = 2750;
+    const offset = 3650;
 
     const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
     gradientLine.style.height = newHeight + "px";
@@ -329,7 +341,7 @@ window.addEventListener("scroll", function () {
     const scrollPosition = window.scrollY;
 
     const maxHeight = 740;
-    const offset = 3600;
+    const offset = 4450;
 
     const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
     gradientLine.style.height = newHeight + "px";
@@ -340,7 +352,7 @@ window.addEventListener("scroll", function () {
     const scrollPosition = window.scrollY;
 
     const maxHeight = 600;
-    const offset = 4450;
+    const offset = 5250;
 
     const newHeight = Math.max(0, Math.min(scrollPosition - offset, maxHeight));
     gradientLine.style.height = newHeight + "px";

@@ -1234,6 +1234,33 @@ nav {
   height: 100%;
 }
 
+.glowing-icon-agri {
+  background-color: #0C584C !important;
+}
+
+.agri_experience .experience_container_info p strong {
+  color: #0C584C;
+}
+
+.gradient-line-agri {
+  background: linear-gradient(#0C584C,
+      #0C584C 10%,
+      #10654a 70%,
+      #26a980 80%,
+      #196c2e 90%,
+      #196c2e);
+  margin-left: calc((40px / 2) - (3px / 2));
+  margin-right: calc((40px / 2) - (3px / 2));
+  box-shadow: 0px 5px 8px #0C584C;
+  width: 3px;
+  height: 0px;
+  border-radius: 15px;
+}
+
+.back-agri {
+  background-color: #0C584C !important;
+}
+
 .glowing-icon-gop {
   background-color: #90c43cb0 !important;
 }
